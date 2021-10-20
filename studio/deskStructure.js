@@ -4,7 +4,7 @@ import Emoji from "a11y-react-emoji";
 const Information = () => <Emoji style={{ fontSize: "2rem" }} symbol="ℹ️" />;
 const Menu = () => <Emoji style={{ fontSize: "2rem" }} symbol="🔗" />;
 
-const url = "https://justsands.vercel.app/";
+const url = "https://sands.vercel.app/";
 
 const WebPreview = ({ document }) => {
   const { displayed } = document;
