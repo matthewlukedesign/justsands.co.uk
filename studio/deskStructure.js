@@ -8,11 +8,27 @@ const url = "https://sands.vercel.app/";
 
 const WebPreview = ({ document }) => {
   const { displayed } = document;
-
-  const targetURL = url + `?preview=true`;
-  return (
-    <iframe src={targetURL} frameBorder={0} width="1280px" height="100%" />
-  );
+  if (displayed._type === "information") {
+    const targetURL = url + `information/?preview=true`;
+    return (
+      <iframe src={targetURL} frameBorder={0} width="1280px" height="100%" />
+    );
+  } else if (displayed._type === "access") {
+    const targetURL = url + `access/?preview=true`;
+    return (
+      <iframe src={targetURL} frameBorder={0} width="1280px" height="100%" />
+    );
+  } else if (displayed._type === "page") {
+    const targetURL = url + displayed.slug.current + "/?preview=true";
+    return (
+      <iframe src={targetURL} frameBorder={0} width="1280px" height="100%" />
+    );
+  } else {
+    const targetURL = url + `?preview=true`;
+    return (
+      <iframe src={targetURL} frameBorder={0} width="1280px" height="100%" />
+    );
+  }
 };
 
 export default () =>
