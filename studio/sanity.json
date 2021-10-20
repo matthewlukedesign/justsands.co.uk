@@ -12,7 +12,8 @@
     "@sanity/default-layout",
     "@sanity/default-login",
     "@sanity/desk-tool",
-    "autocomplete-tags"
+    "autocomplete-tags",
+    "mux-input"
   ],
   "env": {
     "development": {

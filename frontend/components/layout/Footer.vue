@@ -1,5 +1,5 @@
 <template>
-  <header class="mt-auto leading-none flex justify-between">
+  <header class="relative z-10 flex justify-between mt-auto leading-none">
     <NuxtLink to="/">&copy; SANDS {{ new Date().getFullYear() }}</NuxtLink>
     <NuxtLink :to="link[0].slug" v-for="(link, index) in menu" :key="index">{{
       link[0].title

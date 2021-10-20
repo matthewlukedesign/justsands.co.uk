@@ -4,6 +4,11 @@ export default {
   type: "document",
   fields: [
     {
+      name: "background",
+      title: "Background",
+      type: "mux.video",
+    },
+    {
       name: "location",
       title: "Location",
       type: "blockContent",
