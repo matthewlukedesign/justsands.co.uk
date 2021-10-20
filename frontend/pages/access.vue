@@ -1,11 +1,11 @@
 <template>
-  <div class="w-1/2 space-y-12 pb-6">
+  <div class="pb-6 space-y-8 md:space-y-12 md:w-1/2">
     <header class="uppercase">Priority Access</header>
     <div action="" class="border-t border-black divide-y divide-black">
       <div>
         <input
           type="text"
-          class="placeholder-black w-full py-3 outline-none"
+          class="w-full py-3 placeholder-black outline-none"
           placeholder="Enter email address"
           v-if="!sent"
         />
@@ -13,7 +13,7 @@
       </div>
       <footer
         v-if="!sent"
-        class="border-t flex flex-col border-black pt-3 items-start space-y-5"
+        class="flex flex-col items-start pt-3 space-y-5 border-t border-black"
       >
         <button type="submit" class="btn" @click="submit">Submit</button>
         <p class="text-sm leading-snug">

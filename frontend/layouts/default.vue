@@ -1,9 +1,9 @@
 <template>
-  <main class="relative flex flex-col min-h-full p-3 overflow-hidden">
+  <main class="relative flex flex-col min-h-full p-2 overflow-hidden md:p-3">
     <transition name="fade">
       <MediaVideo
         :id="background"
-        class="absolute top-0 object-cover w-full h-full"
+        class="absolute top-0 left-0 object-cover w-full h-full"
         v-if="$nuxt.$route.path == '/' && background"
       ></MediaVideo>
       {{ background }}
@@ -12,7 +12,7 @@
       <NuxtLink
         v-if="$nuxt.$route.path != '/'"
         to="/"
-        class="absolute top-0 right-0 w-12 h-12 m-3"
+        class="absolute top-0 right-0 w-8 h-8 m-3 md:w-10 md:h-10"
       >
         <SvgCross></SvgCross
       ></NuxtLink>

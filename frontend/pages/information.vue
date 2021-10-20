@@ -1,13 +1,8 @@
 <template>
-  <div class="w-1/2 space-y-12 pb-6">
+  <div class="pb-6 space-y-8 md:space-y-12 md:w-1/2">
     <header class="uppercase">Information</header>
     <div
-      class="
-        space-y-1
-        pb-1
-        border-t border-b border-black
-        divide-y divide-black
-      "
+      class="pb-1 space-y-1 border-t border-b border-black divide-y divide-black "
     >
       <div
         v-for="information in information.information"
