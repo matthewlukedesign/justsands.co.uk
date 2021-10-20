@@ -4,7 +4,7 @@
       <NuxtLink
         v-if="$nuxt.$route.path != '/'"
         to="/"
-        class="absolute w-16 h-16 right-0 top-0 m-3"
+        class="absolute w-12 h-12 right-0 top-0 m-3"
       >
         <SvgCross></SvgCross
       ></NuxtLink>
