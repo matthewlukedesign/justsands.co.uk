@@ -48,7 +48,7 @@
         </div>
       </header>
       <nav
-        class="flex flex-col my-auto space-y-2  md:space-y-0 md:py-3 md:mx-auto md:flex-row md:w-2/3 order-0"
+        class="flex flex-col space-y-2  md:my-auto md:space-y-0 md:py-3 md:mx-auto md:flex-row md:w-2/3 order-0"
       >
         <div class="flex w-full md:justify-center">
           <NuxtLink to="/access" class="btn">Priority Access</NuxtLink>
