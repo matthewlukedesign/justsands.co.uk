@@ -1,0 +1,13 @@
+.fade-enter-active,
+.fade-leave-active,
+.page-enter-active,
+.page-leave-active {
+  @apply transition duration-300;
+}
+
+.fade-enter,
+.fade-leave-active,
+.page-enter,
+.page-leave-active {
+  @apply opacity-0;
+}
