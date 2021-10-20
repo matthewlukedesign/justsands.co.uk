@@ -1,0 +1,14 @@
+html,
+body,
+#__nuxt,
+#__layout {
+  @apply h-full;
+}
+
+html {
+  font-size: 125%;
+}
+
+body {
+  @apply antialiased leading-none;
+}
