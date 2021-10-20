@@ -1,5 +1,5 @@
 <template>
-  <div class="w-1/2 space-y-12 pb-4">
+  <div class="w-1/2 space-y-12 pb-6">
     <header class="uppercase">Information</header>
     <div
       class="
