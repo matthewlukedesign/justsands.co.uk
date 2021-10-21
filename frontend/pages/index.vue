@@ -17,15 +17,14 @@
               </span>
             </span>
           </article>
-          <article>
-            <span>+ Many more TBA</span>
-          </article>
+          <article></article>
         </div>
         <div class="flex flex-col items-start space-y-6 md:space-y-0">
           <Richtext
             :blocks="information.location"
             class="ml-auto md:ml-0"
           ></Richtext>
+          <br /><br />
           <footer class="mt-auto">
             {{ information.date.from | moment('ddd DD') }}
             <span class="mx-1 font-body">–</span>
