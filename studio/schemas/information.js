@@ -9,6 +9,11 @@ export default {
       type: "mux.video",
     },
     {
+      name: "image",
+      title: "Image",
+      type: "image",
+    },
+    {
       name: "location",
       title: "Location",
       type: "blockContent",

@@ -46,6 +46,16 @@ p {
   }
 }
 
+ul {
+  li {
+    @apply relative pl-5;
+    &:before {
+      @apply absolute left-0 top-0;
+      content: '—';
+    }
+  }
+}
+
 @screen md {
   p {
     &:empty {
