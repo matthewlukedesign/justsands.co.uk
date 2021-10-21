@@ -3,13 +3,13 @@
     <transition name="fade">
       <MediaVideo
         :id="background"
-        class="absolute top-0 left-0 object-cover w-full h-full"
+        class="absolute top-0 left-0 object-cover w-full h-screen"
         v-if="$nuxt.$route.path == '/' && background.video"
       ></MediaVideo>
       <MediaImage
         :src="background.image"
         v-else-if="$nuxt.$route.path == '/' && background.image"
-        class="absolute top-0 left-0 object-cover w-full h-full"
+        class="absolute top-0 left-0 object-cover w-full h-screen"
         :sizes="'sm:100vw md:100vw lg:150vw'"
       ></MediaImage>
     </transition>
