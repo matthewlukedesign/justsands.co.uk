@@ -29,10 +29,10 @@
           <footer class="mt-auto">
             {{ information.date.from | moment('ddd DD') }}
             <span class="mx-1 font-body">–</span>
-            {{ information.date.from | moment('ddd DD') }}
+            {{ information.date.to | moment('ddd DD') }}
             <div class="flex justify-between">
               <span>{{ information.date.from | moment('MMM') }}</span>
-              <span>{{ information.date.from | moment('YYYY') }}</span>
+              <span>{{ information.date.to | moment('YYYY') }}</span>
             </div>
           </footer>
         </div>
