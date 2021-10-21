@@ -1,22 +1,7 @@
 <template>
   <div class="pb-6 space-y-8 md:space-y-12 md:w-1/2">
     <header class="uppercase">Information</header>
-    <div
-      class="pb-1 space-y-1 border-t border-b border-black divide-y divide-black "
-    >
-      <div
-        v-for="information in information.information"
-        :key="information._key"
-        @click="toggle(information._key)"
-      >
-        <header class="pt-1 uppercase cursor-pointer">
-          {{ information.title }}
-        </header>
-        <div class="py-3" v-if="active == information._key">
-          <Richtext :blocks="information.content"></Richtext>
-        </div>
-      </div>
-    </div>
+    <Accordions :accordions="information.information"></Accordions>
   </div>
 </template>
 <script>

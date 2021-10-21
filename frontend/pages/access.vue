@@ -16,7 +16,7 @@
         class="flex flex-col items-start pt-3 space-y-5 border-t border-black"
       >
         <button type="submit" class="btn" @click="submit">Submit</button>
-        <p class="text-sm leading-snug">
+        <p class="leading-snug">
           By registering you are also opting in to receive updates about events
           organised by Soundcrash and Eat Your Own Ears
         </p>
