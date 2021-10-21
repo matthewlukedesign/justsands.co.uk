@@ -13,7 +13,8 @@
     "@sanity/default-login",
     "@sanity/desk-tool",
     "autocomplete-tags",
-    "mux-input"
+    "mux-input",
+    "order-documents"
   ],
   "env": {
     "development": {

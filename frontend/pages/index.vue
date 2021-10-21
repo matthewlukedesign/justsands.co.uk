@@ -4,7 +4,7 @@
       <header
         class="order-1 py-3 space-y-6  md:order-none md:space-y-0 md:py-0 md:grid md:grid-cols-4 md:order-0"
       >
-        <div class="col-span-2 md:grid md:grid-cols-2">
+        <div class="col-span-2 columns">
           <article v-for="artist in artists" :key="artist._id">
             {{ artist.title }}
             <span v-if="artist.tags">
@@ -82,9 +82,16 @@ export default {
   async asyncData({ params, $sanity }) {
     const informationQuery = groq`*[_type == "information"] {social, date, location, "background" : background.asset->playbackId} | order(_updatedAt desc)[0]`
     const information = await $sanity.fetch(informationQuery)
-    const artistQuery = groq`*[_type == "artist"] {title, "tags" : tags[].label, _id} | order(_updatedAt desc)`
+    const artistQuery = groq`*[_type == "artist"] {title, "tags" : tags[].label, _id} | order(order desc)`
     const artists = await $sanity.fetch(artistQuery)
     return { information, artists }
   },
 }
 </script>
+<style lang="scss" scoped>
+@screen md {
+  .columns {
+    columns: 2;
+  }
+}
+</style>

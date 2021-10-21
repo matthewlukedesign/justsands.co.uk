@@ -18,6 +18,12 @@ export default {
       title: "Tags",
       type: "tags",
     },
+    {
+      name: "order",
+      title: "Order",
+      type: "number",
+      hidden: true,
+    },
   ],
   preview: {
     select: {
