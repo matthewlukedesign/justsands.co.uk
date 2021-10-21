@@ -62,9 +62,7 @@ export default () =>
             ])
         ),
 
-      ...S.documentTypeListItems()
-        .filter((listItem) => !["information"].includes(listItem.getId()))
-        .filter((listItem) => !["menu"].includes(listItem.getId())),
+      ...S.documentTypeListItems(),
     ]);
 export const getDefaultDocumentNode = ({ schemaType }) => {
   // Conditionally return a different configuration based on the schema type

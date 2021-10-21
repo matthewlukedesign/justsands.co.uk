@@ -26,11 +26,11 @@
           ></Richtext>
           <br /><br />
           <footer class="mt-auto">
-            {{ information.date.from | moment('ddd DD') }}
-            <span class="mx-1 font-body">–</span>
-            {{ information.date.to | moment('ddd DD') }}
+            {{ information.date.from | moment('ddd DD')
+            }}<span class="mx-1 font-body">—</span
+            >{{ information.date.to | moment('ddd DD') }}
             <div class="flex justify-between">
-              <span>{{ information.date.from | moment('MMM') }}</span>
+              <span>{{ information.date.from | moment('MMMM') }}</span>
               <span>{{ information.date.to | moment('YYYY') }}</span>
             </div>
           </footer>
