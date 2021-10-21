@@ -6,7 +6,19 @@ export default {
     {
       name: "background",
       title: "Background",
-      type: "mux.video",
+      type: "object",
+      fields: [
+        {
+          name: "video",
+          title: "Video",
+          type: "mux.video",
+        },
+        {
+          name: "image",
+          title: "Image",
+          type: "image",
+        },
+      ],
     },
     {
       name: "image",

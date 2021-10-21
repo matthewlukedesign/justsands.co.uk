@@ -29,13 +29,19 @@ export default {
   components: true,
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
-  buildModules: ['@nuxtjs/sanity/module', '@nuxtjs/tailwindcss'],
+  buildModules: ['@nuxtjs/sanity/module', '@nuxtjs/tailwindcss', '@nuxt/image'],
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
+  image: {
+    sanity: {
+      projectId: 'zfoijc11',
+      dataset: 'production',
+    },
+  },
   sanity: {
     withCredentials: true,
     useCdn: false,

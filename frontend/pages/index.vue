@@ -24,7 +24,7 @@
             :blocks="information.location"
             class="ml-auto md:ml-0"
           ></Richtext>
-          <br /><br />
+          <br />
           <footer class="mt-auto">
             {{ information.date.from | moment('ddd DD')
             }}<span class="mx-1 font-body">—</span
