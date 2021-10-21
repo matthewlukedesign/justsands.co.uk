@@ -7,7 +7,7 @@
         <div class="col-span-2 columns">
           <article v-for="artist in artists" :key="artist._id">
             {{ artist.title }}
-            <span v-if="artist.tags">
+            <span v-if="artist.tags" class="font-medium">
               <span
                 v-for="(tag, index) in artist.tags"
                 :key="index"
