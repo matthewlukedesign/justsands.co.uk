@@ -82,7 +82,7 @@ export default {
   async asyncData({ params, $sanity }) {
     const informationQuery = groq`*[_type == "information"] {social, date, location, "background" : background.asset->playbackId} | order(_updatedAt asc)[0]`
     const information = await $sanity.fetch(informationQuery)
-    const artistQuery = groq`*[_type == "artist"] {title, "tags" : tags[].label, _id} | order(order desc)`
+    const artistQuery = groq`*[_type == "artist"] {title, "tags" : tags[].label, _id} | order(order asc)`
     const artists = await $sanity.fetch(artistQuery)
     return { information, artists }
   },
