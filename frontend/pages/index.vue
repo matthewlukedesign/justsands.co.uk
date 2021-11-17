@@ -27,11 +27,14 @@
           <br />
           <footer class="mt-auto">
             {{ information.date.from | moment('ddd DD')
-            }}<span class="mx-1 font-body">—</span
-            >{{ information.date.to | moment('ddd DD') }}
+            }}<span v-if="information.date.to != information.date.from"
+              ><span class="mx-1 font-body">—</span
+              >{{ information.date.to | moment('ddd DD') }}</span
+            >
             <div class="flex justify-between">
-              <span>{{ information.date.from | moment('MMMM') }}</span>
-              <span>{{ information.date.to | moment('YYYY') }}</span>
+              <span>{{ information.date.from | moment('MMMM') }}</span
+              >&nbsp;
+              <span> {{ information.date.to | moment('YYYY') }}</span>
             </div>
           </footer>
         </div>
