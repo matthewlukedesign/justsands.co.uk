@@ -26,10 +26,10 @@
           ></Richtext>
           <br />
           <footer class="mt-auto">
-            {{ information.date.from | moment('ddd DD')
+            {{ information.date.from | moment('ddd D')
             }}<span v-if="information.date.to != information.date.from"
               ><span class="mx-1 font-body">—</span
-              >{{ information.date.to | moment('ddd DD') }}</span
+              >{{ information.date.to | moment('ddd D') }}</span
             >
             <div class="flex justify-between">
               <span>{{ information.date.from | moment('MMMM') }}</span
