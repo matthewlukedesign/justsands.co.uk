@@ -53,7 +53,12 @@
         class="flex flex-col space-y-2  md:my-auto md:space-y-0 md:py-3 md:mx-auto md:flex-row md:w-2/3 order-0"
       >
         <div class="flex w-full md:justify-center">
-          <NuxtLink to="/access" class="btn">Priority Access</NuxtLink>
+          <a
+            href="https://soundcrashmusic.com/show/sands-priority-sign-up/"
+            target="_blank"
+            class="btn"
+            >Priority Access</a
+          >
         </div>
         <div class="flex w-full md:justify-center">
           <NuxtLink to="/information" class="btn">Information</NuxtLink>
