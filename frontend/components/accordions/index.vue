@@ -1,6 +1,6 @@
 <template>
   <div
-    class="pb-1 space-y-1 border-t border-b border-black divide-y divide-black"
+    class="pb-1 space-y-1 border-t border-b border-current divide-y divide-current "
   >
     <AccordionsAccordion
       v-for="information in accordions"
