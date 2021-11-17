@@ -1,5 +1,5 @@
 <template>
-  <div class="w-1/2 space-y-12 pb-6">
+  <div class="w-1/2 pb-6 space-y-12" v-if="page">
     <header class="uppercase">{{ page.title }}</header>
     <div>
       <Richtext :blocks="page.content"></Richtext>

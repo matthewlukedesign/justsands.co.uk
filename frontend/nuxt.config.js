@@ -23,6 +23,10 @@ export default {
   plugins: [
     { src: '~/plugins/vue-moment', mode: 'client' },
     '~/plugins/preview.client.js',
+    {
+      src: '~/plugins/mailchimp',
+      mode: 'client',
+    },
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
