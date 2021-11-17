@@ -14,6 +14,11 @@ export default {
           type: "reference",
           to: [{ type: "page" }],
         },
+        {
+          name: "externalLink",
+          title: "Link",
+          type: "url",
+        },
       ],
     },
   ],
