@@ -11,13 +11,25 @@ export default {
         {
           name: "link",
           title: "Link",
-          type: "reference",
-          to: [{ type: "page" }],
-        },
-        {
-          name: "externalLink",
-          title: "Link",
-          type: "url",
+          type: "object",
+          fields: [
+            {
+              name: "link",
+              title: "Link",
+              type: "reference",
+              to: [{ type: "page" }],
+            },
+            {
+              name: "externalLink",
+              title: "Link",
+              type: "url",
+            },
+            {
+              name: "title",
+              title: "Title",
+              type: "string",
+            },
+          ],
         },
       ],
     },

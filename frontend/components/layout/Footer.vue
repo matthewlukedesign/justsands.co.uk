@@ -5,8 +5,8 @@
     <NuxtLink to="/">&copy; SANDS {{ new Date().getFullYear() }}</NuxtLink>
     <span v-for="(link, index) in menu.links" :key="index">
       <NuxtLink :to="link.slug" v-if="link.slug">{{ link.title }}</NuxtLink>
-      <a :href="link.externalLink" v-else-if="link.externalLink">{{
-        link.title
+      <a target="_blank" :href="link.external.link" v-else-if="link.external">{{
+        link.external.title
       }}</a>
     </span>
   </header>

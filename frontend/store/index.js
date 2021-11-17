@@ -15,7 +15,7 @@ export const mutations = {
 
 export const actions = {
   async nuxtServerInit({ commit }) {
-    const menuQuery = groq`*[_type == "menu" ] {links[]->{title, externalLink, "slug" : slug.current} } | order(_createdAt asc)[0]`
+    const menuQuery = groq`*[_type == "menu" ] {links[] {"title" : link->title, "slug" : link->slug.current, "external" : {"title" : title, "link" : externalLink}} } | order(_createdAt desc)[0]`
     const menu = await this.$sanity.fetch(menuQuery)
     commit('SET_MENU', menu)
 
