@@ -50,19 +50,19 @@
         </div>
       </header>
       <nav
-        class="flex flex-col space-y-2  md:my-auto md:space-y-0 md:py-3 md:mx-auto md:flex-row md:w-2/3 order-0"
+        class="flex flex-col items-center space-y-2  md:space-x-2 md:my-auto md:space-y-0 md:py-3 md:mx-auto md:flex-row order-0"
       >
-        <div class="flex w-full md:justify-center">
-          <a
-            href="https://soundcrashmusic.com/show/sands-priority-sign-up/"
-            target="_blank"
-            class="btn"
-            >Priority Access</a
-          >
-        </div>
-        <div class="flex w-full md:justify-center">
-          <NuxtLink to="/information" class="btn">Information</NuxtLink>
-        </div>
+        <a
+          href="https://soundcrashmusic.com/show/sands-priority-sign-up/"
+          target="_blank"
+          class="btn"
+          >Early Access</a
+        >
+        <span class="pointer-events-none disabled btn"
+          >General Onsale 3 December</span
+        >
+
+        <NuxtLink to="/information" class="btn">Information</NuxtLink>
       </nav>
 
       <section class="order-2 text-6xl uppercase md:order-none">
