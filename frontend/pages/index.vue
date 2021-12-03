@@ -56,6 +56,7 @@
           class="btn"
           v-if="information.ticketLink"
           :href="information.ticketLink.url"
+          target="_blank"
           >{{ information.ticketLink.title }}</a
         >
 
