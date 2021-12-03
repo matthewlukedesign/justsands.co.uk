@@ -53,13 +53,10 @@
         class="flex flex-col items-center space-y-2  md:space-x-2 md:my-auto md:space-y-0 md:py-3 md:mx-auto md:flex-row order-0"
       >
         <a
-          href="https://soundcrashmusic.com/show/sands-priority-sign-up/"
-          target="_blank"
           class="btn"
-          >Early Access</a
-        >
-        <span class="pointer-events-none disabled btn"
-          >General Onsale 3 December</span
+          v-if="information.ticketLink"
+          :href="information.ticketLink.url"
+          >{{ information.ticketLink.title }}</a
         >
 
         <NuxtLink to="/information" class="btn">Information</NuxtLink>
@@ -87,7 +84,7 @@
 import { groq } from '@nuxtjs/sanity'
 export default {
   async asyncData({ params, $sanity }) {
-    const informationQuery = groq`*[_type == "information"] {social, date, location, "background" : background.asset->playbackId} | order(_updatedAt desc)[0]`
+    const informationQuery = groq`*[_type == "information"] {ticketLink, social, date, location, "background" : background.asset->playbackId} | order(_updatedAt desc)[0]`
     const information = await $sanity.fetch(informationQuery)
     const artistQuery = groq`*[_type == "artist"] {title, "tags" : tags[].label, _id} | order(order asc)`
     const artists = await $sanity.fetch(artistQuery)

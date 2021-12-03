@@ -72,6 +72,23 @@ export default {
       ],
     },
     {
+      name: "ticketLink",
+      title: "Ticket Link",
+      type: "object",
+      fields: [
+        {
+          name: "title",
+          title: "Title",
+          type: "string",
+        },
+        {
+          name: "url",
+          title: "URL",
+          type: "url",
+        },
+      ],
+    },
+    {
       name: "information",
       title: "Information",
       type: "array",
