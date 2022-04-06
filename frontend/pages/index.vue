@@ -61,6 +61,7 @@
         >
 
         <NuxtLink to="/information" class="btn">Information</NuxtLink>
+        <NuxtLink to="/accommodation" class="btn">Accommodation</NuxtLink>
       </nav>
 
       <section class="order-2 text-6xl uppercase md:order-none">
