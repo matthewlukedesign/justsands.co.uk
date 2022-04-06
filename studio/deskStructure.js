@@ -49,6 +49,19 @@ export default () =>
             ])
         ),
       S.listItem()
+        .title("Accommodation")
+        .icon(Information)
+        .child(
+          S.document()
+            .schemaType("accommodation")
+            .documentId("accommodation")
+            .title("Accommodation")
+            .views([
+              S.view.form(),
+              S.view.component(WebPreview).title("Web Preview"),
+            ])
+        ),
+      S.listItem()
         .title("Menu")
         .icon(Menu)
         .child(
@@ -64,6 +77,7 @@ export default () =>
 
       ...S.documentTypeListItems()
         .filter((listItem) => !["menu"].includes(listItem.getId()))
+        .filter((listItem) => !["accommodation"].includes(listItem.getId()))
         .filter((listItem) => !["information"].includes(listItem.getId())),
     ]);
 export const getDefaultDocumentNode = ({ schemaType }) => {
