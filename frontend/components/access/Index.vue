@@ -35,7 +35,7 @@
             />
           </div>
           <span class="text-2xs" v-if="!error && !success"
-            >By signing up you agree to be contacted by relating events from
+            >By signing up you agree to be contacted by related events from
             Soundcrash and Eat Your Own Ears
           </span>
         </form>
