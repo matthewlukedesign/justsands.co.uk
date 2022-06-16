@@ -19,8 +19,8 @@
           <div v-if="!success" class="w-full">
             <input
               type="email"
-              class="w-full px-1 py-3 leading-none placeholder-white bg-transparent bg-white bg-opacity-25 outline-none "
-              placeholder="Enter email address"
+              class="w-full px-1 py-3 leading-none text-center placeholder-white bg-transparent bg-white bg-opacity-25 outline-none "
+              placeholder="email address"
               @input="setEmail($event.target.value)"
               required
               ref="input"
