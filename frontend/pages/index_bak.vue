@@ -62,7 +62,6 @@
 
         <NuxtLink to="/information" class="btn">Information</NuxtLink>
       </nav>
-
       <section class="order-2 text-6xl uppercase md:order-none">
         <SvgSands></SvgSands>
       </section>
