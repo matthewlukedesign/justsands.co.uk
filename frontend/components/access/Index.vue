@@ -1,7 +1,7 @@
 <template>
   <client-only>
     <mailchimp
-      url="https://justsands.us9.list-manage.com/subscribe/post"
+      url="https://justsands.us9.list-manage.com/subscribe/post-json"
       user-id="29a5a20b0b0f4c98158a9b760"
       list-id="d5f7ff1661"
     >
