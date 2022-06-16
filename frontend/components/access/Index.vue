@@ -10,7 +10,7 @@
           This email address is already subscribed.
         </span>
         <span v-else-if="success" class="py-3">
-          Thank you for requesting priority access.
+          Thank you for signing up.
         </span>
         <div v-else class="w-full">
           <input
