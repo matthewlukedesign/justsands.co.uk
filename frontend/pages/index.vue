@@ -6,9 +6,9 @@
       >
         <Access />
       </div>
-      <section class="relative order-2 mt-auto uppercase md:order-none">
+      <section class="relative order-2 mt-auto md:order-none">
         <span class="absolute top-0 right-0 -mt-4 transform -translate-y-full"
-          >10 June 2023</span
+          >Sat 10 June 2023</span
         >
         <SvgSands></SvgSands>
       </section>
