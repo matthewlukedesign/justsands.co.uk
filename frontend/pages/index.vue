@@ -4,7 +4,6 @@
       <div
         class="flex flex-col items-center justify-center flex-1 space-y-4 text-center  md:max-w-sm md:my-auto md:py-3 md:mx-auto order-0"
       >
-        <header>Sign up here for the latest news on SANDS 2023</header>
         <Access />
       </div>
       <section class="order-2 mt-auto text-6xl uppercase md:order-none">
